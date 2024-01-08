@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "cca887d7-d0d1-432b-9ec2-8e40bfb91d90",
+		"name": "DCE_Online_Store API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23187440"
+	},
+	"item": [
+		{
+			"name": "Add Customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"user2\",\r\n  \"email\": \"user2@gmail.com\",\r\n  \"firstName\": \"Jhon\",\r\n  \"lastName\": \"Snow\",\r\n  \"isActive\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7051/api/Customer/AddCustomer",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7051",
+					"path": [
+						"api",
+						"Customer",
+						"AddCustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all existing Customers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"User1\",\r\n  \"email\": \"snow@gmail.com\",\r\n  \"firstName\": \"Snow\",\r\n  \"lastName\": \"Jhon\",\r\n  \"isActive\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7051/api/Customer/GetAllCustomers",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7051",
+					"path": [
+						"api",
+						"Customer",
+						"GetAllCustomers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update existing Customer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userId\": \"E54E1CF2-83BC-4199-AF74-F58EB1DDFCBD\",\r\n  \"username\": \"user2\",\r\n  \"email\": \"user2@gmail.com\",\r\n  \"firstName\": \"Dinuka\",\r\n  \"lastName\": \"Sankalpa\",\r\n  \"isActive\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7051/api/Customer/UpdateCustomer",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7051",
+					"path": [
+						"api",
+						"Customer",
+						"UpdateCustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete existing Customer",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7051/api/Customer/DeleteCustomer/E54E1CF2-83BC-4199-AF74-F58EB1DDFCBD",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7051",
+					"path": [
+						"api",
+						"Customer",
+						"DeleteCustomer",
+						"E54E1CF2-83BC-4199-AF74-F58EB1DDFCBD"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
